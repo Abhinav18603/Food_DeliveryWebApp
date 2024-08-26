@@ -1,0 +1,55 @@
+.food-display {
+    margin-top: 30px;
+    padding: 20px; /* Added padding for better spacing */
+    background-color: #F5F5F5; /* Light Gray background for a clean look */
+    border-radius: 8px; /* Rounded corners for a modern feel */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.food-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+    color: #003366; /* Deep Blue for headers to convey trust and professionalism */
+    margin-bottom: 20px; /* Space below the header for better separation */
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.food-display-list-item {
+    background-color: #FFFFFF; /* White background for items for a clean and spacious feel */
+    border: 1px solid #E2E2E2; /* Light Gray border for subtle separation */
+    border-radius: 8px; /* Rounded corners for a modern feel */
+    overflow: hidden; /* Ensures that content fits within rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column; /* Ensure items stack vertically */
+    height: 100%; /* Ensure all items have the same height */
+}
+
+.food-display-list-item img {
+    width: 100%;
+    height: 150px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    border-bottom: 1px solid #E2E2E2; /* Light Gray border for image separation */
+}
+
+.food-display-list-item p {
+    padding: 15px;
+    color: #333333; /* Dark Gray for text to ensure readability */
+    font-size: 16px;
+    flex-grow: 1; /* Allow text to take up remaining space */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+.food-display-list-item:hover {
+    transform: scale(1.05); /* Slightly larger on hover for emphasis */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
