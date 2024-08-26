@@ -1,18 +1,17 @@
-
 .login-popup {
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-color: #00000090; /* Semi-transparent black overlay for the background */
+    background-color: #00000090;
     display: grid;
 }
 
 .login-popup-container {
     place-self: center;
     width: max(23vw, 330px);
-    color: #333333; /* Dark Gray for text to ensure readability against white background */
-    background-color: #FFFFFF; /* White background to create a clean, spacious feel */
+    color: #333333;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -20,14 +19,14 @@
     border-radius: 8px;
     font-size: 14px;
     animation: fadeIn 0.5s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .login-popup-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #003366; /* Deep Blue to convey trust and professionalism */
+    color: #003366;
 }
 
 .login-popup-title img {
@@ -43,29 +42,29 @@
 
 .login-popup-inputs input {
     outline: none;
-    border: 1px solid #C9C9C9; /* Light Gray for subtle input borders */
+    border: 1px solid #C9C9C9;
     padding: 10px;
     border-radius: 4px;
-    transition: border-color 0.3s ease; /* Smooth transition for border color on focus */
+    transition: border-color 0.3s ease;
 }
 
 .login-popup-inputs input:focus {
-    border-color: #003366; /* Deep Blue border on focus to match brand colors */
+    border-color: #003366;
 }
 
 .login-popup-container button {
     border: none;
     padding: 10px;
     border-radius: 4px;
-    color: #FFFFFF; /* White text for contrast */
-    background-color: #FF6F00; /* Vibrant Orange for call-to-action buttons */
+    color: #FFFFFF;
+    background-color: #FF6F00;
     font-size: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+    transition: background-color 0.3s ease;
 }
 
 .login-popup-container button:hover {
-    background-color: #FF8F32; /* Slightly lighter orange on hover */
+    background-color: #FF8F32;
 }
 
 .login-popup-condition {
@@ -80,17 +79,16 @@
 }
 
 .login-popup p span {
-    color: #FF6F00; /* Vibrant Orange for clickable text to draw attention */
+    color: #FF6F00;
     font-weight: 500;
     cursor: pointer;
-    transition: color 0.3s ease; /* Smooth transition for color on hover */
+    transition: color 0.3s ease;
 }
 
 .login-popup p span:hover {
-    color: #FF8F32; /* Slightly lighter orange on hover for clickable elements */
+    color: #FF8F32;
 }
 
-/* Keyframes for fade-in animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
