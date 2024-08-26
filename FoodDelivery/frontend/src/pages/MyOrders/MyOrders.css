@@ -1,20 +1,18 @@
-/* Updated Color Palette */
 :root {
-    --primary-bg: #FFFFFF; /* Clean White for the main background */
-    --secondary-bg: #F9F9F9; /* Light Gray for sections and contrasts */
-    --accent-color: #4CAF50; /* Fresh Green for accents and highlights */
-    --text-color: #333333; /* Dark Gray for primary text */
-    --border-color: #E0E0E0; /* Soft Gray for borders */
-    --button-bg: #E8F5E9; /* Very Light Green for buttons */
-    --button-hover-bg: #C8E6C9; /* Slightly darker green for hover */
-    --highlight-color: #4CAF50; /* Fresh Green for highlights */
+    --primary-bg: #FFFFFF;
+    --secondary-bg: #F9F9F9;
+    --accent-color: #4CAF50;
+    --text-color: #333333;
+    --border-color: #E0E0E0;
+    --button-bg: #E8F5E9;
+    --button-hover-bg: #C8E6C9;
+    --highlight-color: #4CAF50;
 }
 
-/* My Orders Section Styling */
 .my-orders {
     margin: 50px 0;
-    padding: 0 20px; /* Added padding for better spacing */
-    background-color: var(--primary-bg); /* White background for cleanliness */
+    padding: 0 20px;
+    background-color: var(--primary-bg);
 }
 
 .my-orders .container {
@@ -24,7 +22,6 @@
     margin-top: 30px;
 }
 
-/* Order Item Styling */
 .my-orders-order {
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr;
@@ -33,19 +30,19 @@
     font-size: 14px;
     padding: 15px;
     color: var(--text-color);
-    background-color: var(--secondary-bg); /* Light gray for order items */
-    border: 1px solid var(--border-color); /* Soft gray border */
-    border-radius: 8px; /* Rounded corners for modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .my-orders-order img {
-    width: 60px; /* Slightly larger image for better visibility */
-    border-radius: 8px; /* Rounded corners for images */
+    width: 60px;
+    border-radius: 8px;
 }
 
 .my-orders-order p span {
-    color: var(--highlight-color); /* Fresh green for highlights */
+    color: var(--highlight-color);
 }
 
 .my-orders-order p b {
@@ -53,32 +50,30 @@
     color: var(--text-color);
 }
 
-/* Button Styling */
 .my-orders button {
     border: none;
     padding: 12px 20px;
-    border-radius: 8px; /* Rounded corners for buttons */
-    background-color: var(--button-bg); /* Very light green for button background */
+    border-radius: 8px;
+    background-color: var(--button-bg);
     cursor: pointer;
     color: var(--text-color);
-    font-size: 14px; /* Adjusted font size for better readability */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 14px;
+    transition: background-color 0.3s ease;
 }
 
 .my-orders button:hover {
-    background-color: var(--button-hover-bg); /* Slightly darker green on hover */
+    background-color: var(--button-hover-bg);
 }
 
-/* Responsive Styles */
 @media (max-width: 900px) {
     .my-orders-order {
         grid-template-columns: 1fr 2fr 1fr;
-        row-gap: 10px; /* Increased row gap for mobile view */
+        row-gap: 10px;
         font-size: 12px;
     }
     
     .my-orders button {
-        font-size: 12px; /* Adjusted font size for buttons on mobile */
-        padding: 10px 15px; /* Adjusted padding for smaller screens */
+        font-size: 12px;
+        padding: 10px 15px;
     }
 }
