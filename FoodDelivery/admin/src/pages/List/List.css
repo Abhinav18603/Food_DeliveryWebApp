@@ -1,0 +1,48 @@
+/* Fresh and Elegant List Table Format */
+.list-table-format {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 15px; /* Increased gap for a more spacious layout */
+    padding: 15px 20px; /* Added padding for better spacing */
+    border: 1px solid #E0E0E0; /* Light grey border for a modern look */
+    border-radius: 8px; /* Rounded corners for a softer appearance */
+    background-color: #FFFFFF; /* Clean white background for better readability */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-size: 14px; /* Increased font size for better readability */
+    color: #333333; /* Dark grey text for a softer contrast */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+/* Title Row Styling */
+.list-table-format.title {
+    background-color: #F5F5F5; /* Light grey background for title row */
+    font-weight: bold; /* Bold text for emphasis */
+    border-bottom: 2px solid #E0E0E0; /* Slightly thicker bottom border for separation */
+}
+
+/* Image Styling */
+.list-table-format img {
+    width: 60px; /* Increased width for better visibility */
+    border-radius: 4px; /* Rounded corners for images */
+}
+
+/* Price Amount Styling */
+.list-table-format .price {
+    color: #4CAF50; /* Green color for price amounts */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Responsive Design for Smaller Screens */
+@media(max-width: 600px) {
+    .list-table-format {
+        grid-template-columns: 1fr 3fr 1fr; /* Adjusted columns for smaller screens */
+        gap: 10px; /* Reduced gap to fit the smaller screen */
+        padding: 10px; /* Reduced padding for better fit */
+        font-size: 12px; /* Smaller font size for mobile screens */
+    }
+    
+    .list-table-format.title {
+        display: none; /* Hide title row on smaller screens */
+    }
+}
