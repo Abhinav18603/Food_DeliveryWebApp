@@ -1,22 +1,21 @@
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 3%; 
-    background-color: white; 
-    border-bottom: 1px solid #E0E0E0; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    transition: box-shadow 0.3s ease; 
+    padding: 8px 3%;
+    background-color: white;
+    border-bottom: 1px solid #E0E0E0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
 .navbar:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .navbar .logo {
-    width: max(8%, 60px); 
-    transition: transform 0.3s ease; 
+    width: max(8%, 60px);
+    transition: transform 0.3s ease;
 }
 
 .navbar .logo:hover {
@@ -24,45 +23,45 @@
 }
 
 .navbar .profile {
-    width: 55px; /* Increased size for the profile icon */
-    border-radius: 50%; /* Circular profile picture for a sleek appearance */
-    overflow: hidden; /* Ensure that the image fits within the circular frame */
-    transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    width: 55px;
+    border-radius: 50%; /* Circular profile picture */
+    overflow: hidden;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar .profile:hover {
-    border: 2px solid #FF6F00; /* Vibrant border color on hover for emphasis */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Slight shadow to highlight the profile icon */
+    border: 2px solid #FF6F00; /* Border color on hover */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .admin-panel {
-    margin-left: 15px; /* Reduced spacing between the logo and Admin Panel link */
-    font-size: 14px; /* Smaller font size for the Admin Panel link */
-    color: #333; /* Dark color for the Admin Panel link */
-    text-decoration: none; /* Remove underline from the link */
-    transition: color 0.3s ease; /* Transition effect for hover */
+    margin-left: 15px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .admin-panel:hover {
-    color: #FF6F00; /* Change color on hover */
+    color: #FF6F00; /*Color change on hover */ 
 }
 
-/* Optional: Add responsive adjustments */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .navbar {
-        padding: 8px 2%; /* Adjust padding for smaller screens */
+        padding: 8px 2%;
     }
     
     .navbar .logo {
-        width: max(12%, 50px); /* Adjust logo size for smaller screens */
+        width: max(12%, 50px);
     }
     
     .navbar .profile {
-        width: 50px; /* Adjust profile icon size for smaller screens */
+        width: 50px;
     }
 
     .admin-panel {
-        font-size: 12px; /* Adjust font size for smaller screens */
-        margin-left: 10px; /* Adjust spacing for smaller screens */
+        font-size: 12px;
+        margin-left: 10px;
     }
 }
