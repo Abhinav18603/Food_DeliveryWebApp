@@ -1,7 +1,6 @@
-/* Cart Section Styling */
 .cart {
     margin: 100px 0;
-    padding: 0 15px; /* Added padding for better spacing */
+    padding: 0 15px;
 }
 
 .cart hr {
@@ -10,49 +9,32 @@
     border: none;
 }
 
-/* Cart Items Title */
 .cart-items-title {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
     align-items: center;
-    color: #333333; /* Darker grey for better readability */
-    font-size: clamp(14px, 1vw, 16px); /* Responsive font size */
-    border-bottom: 2px solid #EBEBEB; /* Added a border to separate header from items */
-    padding-bottom: 10px; /* Added padding for spacing */
-    margin-bottom: 20px; /* Space below the header */
+    color: #333333;
+    font-size: clamp(14px, 1vw, 16px);
+    border-bottom: 2px solid #EBEBEB;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-/* Cart Items */
 .cart-items-item {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
     align-items: center;
     margin: 10px 0;
     color: #333333;
-    border-bottom: 1px solid #EBEBEB; /* Light border between items */
+    border-bottom: 1px solid #EBEBEB;
     padding: 10px 0;
-}
-
-.cart-items-item img {
-    width: 60px; /* Slightly larger image for better visibility */
-    border-radius: 4px; /* Rounded corners for images */
-}
-
-.cart-items-item div {
-    max-width: 60px; /* Increased width for better readability */
-    text-align: center;
-    border: 1px solid #EBEBEB;
-    padding: 10px;
-    font-size: 14px; /* Slightly larger font size */
-    border-radius: 4px; /* Rounded corners for quantity boxes */
 }
 
 .cart-items-remove-icon {
     cursor: pointer;
-    color: #FF4C24; /* Color to match the button */
+    color: #FF4C24;
 }
 
-/* Cart Bottom Section */
 .cart-bottom {
     margin-top: 80px;
     display: flex;
@@ -65,10 +47,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px; /* Added padding for better spacing */
-    background-color: #F9F9F9; /* Light background for the total section */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cart-total-details {
@@ -84,20 +66,19 @@
 .cart-total button {
     border: none;
     color: white;
-    background-color: #FF4C24; /* Consistent with the remove icon color */
+    background-color: #FF4C24;
     width: max(15vw, 200px);
     padding: 12px 0;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px; /* Larger font size for better readability */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .cart-total button:hover {
-    background-color: #FF6F6F; /* Lighter orange on hover */
+    background-color: #FF6F6F;
 }
 
-/* Promocode Section */
 .cart-promocode {
     flex: 1;
     display: flex;
@@ -115,7 +96,7 @@
     align-items: center;
     background-color: #eaeaea;
     border-radius: 4px;
-    padding: 5px; /* Added padding for better spacing */
+    padding: 5px;
 }
 
 .cart-promocode-input input {
@@ -123,29 +104,28 @@
     border: none;
     outline: none;
     padding: 10px;
-    font-size: 14px; /* Larger font size for readability */
+    font-size: 14px;
 }
 
 .cart-promocode-input button {
     width: max(10vw, 150px);
     padding: 12px 5px;
-    background-color: #333333; /* Dark background for the button */
+    background-color: #333333;
     border: none;
     color: white;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+    transition: background-color 0.3s ease;
 }
 
 .cart-promocode-input button:hover {
-    background-color: #555555; /* Slightly lighter on hover */
+    background-color: #555555;
 }
 
-/* Responsive Styles */
 @media(max-width: 750px) {
     .cart-bottom {
         flex-direction: column-reverse;
-        gap: 20px; /* Adjust gap for mobile view */
+        gap: 20px;
     }
 
     .cart-promocode {
@@ -153,11 +133,11 @@
     }
 
     .cart-promocode-input {
-        flex-direction: column; /* Stack input and button vertically */
+        flex-direction: column;
     }
 
     .cart-promocode-input button {
-        width: 100%; /* Full width for the button */
-        margin-top: 10px; /* Add margin for spacing */
+        width: 100%;
+        margin-top: 10px;
     }
 }
