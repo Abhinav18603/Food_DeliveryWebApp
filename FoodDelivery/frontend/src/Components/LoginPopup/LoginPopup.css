@@ -1,1 +1,101 @@
 
+.login-popup {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090; /* Semi-transparent black overlay for the background */
+    display: grid;
+}
+
+.login-popup-container {
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #333333; /* Dark Gray for text to ensure readability against white background */
+    background-color: #FFFFFF; /* White background to create a clean, spacious feel */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #003366; /* Deep Blue to convey trust and professionalism */
+}
+
+.login-popup-title img {
+    width: 16px;
+    cursor: pointer;
+}
+
+.login-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-popup-inputs input {
+    outline: none;
+    border: 1px solid #C9C9C9; /* Light Gray for subtle input borders */
+    padding: 10px;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color on focus */
+}
+
+.login-popup-inputs input:focus {
+    border-color: #003366; /* Deep Blue border on focus to match brand colors */
+}
+
+.login-popup-container button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: #FFFFFF; /* White text for contrast */
+    background-color: #FF6F00; /* Vibrant Orange for call-to-action buttons */
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+}
+
+.login-popup-container button:hover {
+    background-color: #FF8F32; /* Slightly lighter orange on hover */
+}
+
+.login-popup-condition {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+
+.login-popup-condition input {
+    margin-top: 5px;
+}
+
+.login-popup p span {
+    color: #FF6F00; /* Vibrant Orange for clickable text to draw attention */
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition for color on hover */
+}
+
+.login-popup p span:hover {
+    color: #FF8F32; /* Slightly lighter orange on hover for clickable elements */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
