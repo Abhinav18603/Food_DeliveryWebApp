@@ -1,0 +1,68 @@
+/* Fresh and Elegant Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 3%; /* Reduced padding for a smaller navbar */
+    background-color: white; /* Clean white background for a fresh appearance */
+    border-bottom: 1px solid #E0E0E0; /* Light grey border for a modern touch */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+}
+
+.navbar:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.navbar .logo {
+    width: max(8%, 60px); /* Reduced logo size for a more compact look */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.navbar .logo:hover {
+    transform: scale(1.05); /* Slightly enlarges the logo on hover for a modern touch */
+}
+
+.navbar .profile {
+    width: 55px; /* Increased size for the profile icon */
+    border-radius: 50%; /* Circular profile picture for a sleek appearance */
+    overflow: hidden; /* Ensure that the image fits within the circular frame */
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar .profile:hover {
+    border: 2px solid #FF6F00; /* Vibrant border color on hover for emphasis */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Slight shadow to highlight the profile icon */
+}
+
+.admin-panel {
+    margin-left: 15px; /* Reduced spacing between the logo and Admin Panel link */
+    font-size: 14px; /* Smaller font size for the Admin Panel link */
+    color: #333; /* Dark color for the Admin Panel link */
+    text-decoration: none; /* Remove underline from the link */
+    transition: color 0.3s ease; /* Transition effect for hover */
+}
+
+.admin-panel:hover {
+    color: #FF6F00; /* Change color on hover */
+}
+
+/* Optional: Add responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 2%; /* Adjust padding for smaller screens */
+    }
+    
+    .navbar .logo {
+        width: max(12%, 50px); /* Adjust logo size for smaller screens */
+    }
+    
+    .navbar .profile {
+        width: 50px; /* Adjust profile icon size for smaller screens */
+    }
+
+    .admin-panel {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-left: 10px; /* Adjust spacing for smaller screens */
+    }
+}
