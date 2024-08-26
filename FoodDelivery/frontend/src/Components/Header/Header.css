@@ -1,0 +1,68 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat center center; /* Centers the background image */
+    background-size: contain;
+    position: relative;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Changed 'start' to 'flex-start' for better consistency */
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s ease-in-out; /* Added easing for smoother animation */
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: black; /* White for contrast against dark backgrounds */
+    font-size: max(4.5vw, 22px); /* Responsive font size */
+}
+
+.header-contents p {
+    color: whitesmoke; /* Light Gray for better readability */
+    font-size: 1vw; /* Responsive font size */
+    font-weight: bold;
+}
+
+.header-contents button {
+    border: none;
+    color: orangered; /* Vibrant Orange for CTA buttons */
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background: #FFFFFF; /* White for contrast */
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.header-contents button:hover {
+    background: darkblue; /* Change background color on hover */
+    color: #FFFFFF; /* Change text color on hover */
+}
+
+@media (max-width: 1050px) {
+    .header {
+        height: 38vw; /* Increased height for smaller screens */
+    }
+    .header-contents {
+        max-width: 45%; /* Adjusted width for better content fit */
+    }
+}
+
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 55%; /* Further adjusted width for small screens */
+    }
+    .header-contents p {
+        display: none; /* Hides paragraph text on small screens for simplicity */
+    }
+    .header-contents button {
+        padding: 2vw 4vw; /* Increased padding for larger touch targets */
+    }
+}
