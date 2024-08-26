@@ -1,7 +1,7 @@
 .header {
     height: 34vw;
     margin: 30px auto;
-    background: url('/header_img.png') no-repeat center center; /* Centers the background image */
+    background: url('/header_img.png') no-repeat center center;
     background-size: contain;
     position: relative;
 }
@@ -10,59 +10,59 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Changed 'start' to 'flex-start' for better consistency */
+    align-items: flex-start;
     gap: 1.5vw;
     max-width: 50%;
     bottom: 10%;
     left: 6vw;
-    animation: fadeIn 3s ease-in-out; /* Added easing for smoother animation */
+    animation: fadeIn 3s ease-in-out;
 }
 
 .header-contents h2 {
     font-weight: 500;
-    color: black; /* White for contrast against dark backgrounds */
-    font-size: max(4.5vw, 22px); /* Responsive font size */
+    color: black;
+    font-size: max(4.5vw, 22px);
 }
 
 .header-contents p {
-    color: whitesmoke; /* Light Gray for better readability */
-    font-size: 1vw; /* Responsive font size */
+    color: whitesmoke;
+    font-size: 1vw;
     font-weight: bold;
 }
 
 .header-contents button {
     border: none;
-    color: orangered; /* Vibrant Orange for CTA buttons */
+    color: orangered;
     font-weight: 500;
     padding: 1vw 2.3vw;
-    background: #FFFFFF; /* White for contrast */
+    background: #FFFFFF;
     font-size: max(1vw, 13px);
     border-radius: 50px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header-contents button:hover {
-    background: darkblue; /* Change background color on hover */
-    color: #FFFFFF; /* Change text color on hover */
+    background: darkblue;
+    color: #FFFFFF;
 }
 
 @media (max-width: 1050px) {
     .header {
-        height: 38vw; /* Increased height for smaller screens */
+        height: 38vw;
     }
     .header-contents {
-        max-width: 45%; /* Adjusted width for better content fit */
+        max-width: 45%;
     }
 }
 
 @media (max-width: 750px) {
     .header-contents {
-        max-width: 55%; /* Further adjusted width for small screens */
+        max-width: 55%;
     }
     .header-contents p {
-        display: none; /* Hides paragraph text on small screens for simplicity */
+        display: none;
     }
     .header-contents button {
-        padding: 2vw 4vw; /* Increased padding for larger touch targets */
+        padding: 2vw 4vw;
     }
 }
