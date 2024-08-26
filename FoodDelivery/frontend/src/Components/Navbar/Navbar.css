@@ -1,54 +1,47 @@
-/* Apply margin to body to account for fixed navbar */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    padding-top: 60px; /* Adjusted this value to the height of your navbar */
+    padding-top: 60px;
 }
 
-/* Navbar Styling */
 .navbar {
-    padding: 10px 3%; /* Increased padding for a larger navbar */
+    padding: 10px 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #003366; /* Deep Blue for the main header and navigation bar */
-    border-radius: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly increased shadow for a larger look */
-    position: fixed; /* Fixed position to stay at the top of the screen */
-    width: 100%; /* Full width to cover the entire screen */
-    top: 0; /* Aligns the navbar to the top of the viewport */
-    left: 0; /* Aligns the navbar to the left edge of the viewport */
-    z-index: 1000; /* Ensures the navbar stays on top of other content */
-    height: 60px; /* Increased height for the navbar */
+    background-color: #003366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 60px;
 }
 
 .navbar .logo {
-    width: 80px; /* Increased logo size for a larger navbar */
+    width: 80px;
     transition: transform 0.3s ease;
-}
-
-.navbar .logo:hover {
-    transform: scale(1.1);
 }
 
 .navbar-menu {
     display: flex;
     list-style: none;
-    gap: 25px; /* Increased gap for more spacing */
+    gap: 25px;
     color: #FFFFFF;
-    font-size: 18px; /* Increased font size for better readability */
+    font-size: 18px;
 }
 
 .navbar-menu .active {
-    padding-bottom: 4px; /* Increased padding for a more noticeable active state */
+    padding-bottom: 4px;
     border-bottom: 2px solid #FF6F00;
 }
 
 .navbar-right {
     display: flex;
     align-items: center;
-    gap: 20px; /* Increased gap for a larger navbar */
+    gap: 20px;
 }
 
 .navbar-search-icon {
@@ -57,8 +50,8 @@ body {
 
 .navbar-search-icon .dot {
     position: absolute;
-    min-width: 10px; /* Adjusted dot size */
-    min-height: 10px; /* Adjusted dot size */
+    min-width: 10px;
+    min-height: 10px;
     background-color: #FF6F00;
     border-radius: 50%;
     top: -8px;
@@ -67,18 +60,13 @@ body {
 
 .navbar-right button {
     background-color: #FF6F00;
-    font-size: 16px; /* Increased font size for better readability */
+    font-size: 16px;
     color: #FFFFFF;
     border: none;
-    padding: 8px 20px; /* Increased padding for more comfort */
+    padding: 8px 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.navbar-right button:hover {
-    background-color: #FF8F32;
-    transform: translateY(-2px);
 }
 
 .navbar-profile {
@@ -91,7 +79,7 @@ body {
     right: 0;
     z-index: 1;
     background-color: #F0EDE5;
-    padding: 10px 15px; /* Increased padding for a larger dropdown */
+    padding: 10px 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     list-style: none;
@@ -100,90 +88,84 @@ body {
 .navbar-profile-dropdown li {
     display: flex;
     align-items: center;
-    gap: 10px; /* Increased gap for dropdown items */
+    gap: 10px;
     cursor: pointer;
     color: #333333;
     border-radius: 6px;
-    padding: 8px 12px; /* Increased padding for better spacing */
+    padding: 8px 12px;
 }
 
 .navbar-profile-dropdown img {
-    width: 20px; /* Adjusted image size for a larger look */
-}
-
-.navbar-profile-dropdown li:hover {
-    background-color: #EFEFEF;
-    color: #FF6F00;
+    width: 20px;
 }
 
 .navbar-profile:hover .navbar-profile-dropdown {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Increased gap for dropdown */
+    gap: 10px;
 }
 
 .navbar-profile hr {
     background-color: gray;
     height: 1px;
     border: none;
-    margin: 12px 0; /* Increased margin for dropdown */
+    margin: 12px 0;
 }
 
-/* Responsive Styles */
 @media (max-width: 1050px) {
     .navbar .logo {
-        width: 70px; /* Adjusted logo width for smaller screens */
+        width: 70px;
     }
 
     .navbar-menu {
-        gap: 20px; /* Adjusted gap for smaller screens */
-        font-size: 16px; /* Adjusted font size for smaller screens */
+        gap: 20px;
+        font-size: 16px;
     }
 
     .navbar-right {
-        gap: 18px; /* Adjusted gap for smaller screens */
+        gap: 18px;
     }
 
     .navbar-right img {
-        width: 20px; /* Adjusted image size for smaller screens */
+        width: 20px;
     }
 
     .navbar-right button {
-        padding: 8px 18px; /* Adjusted padding for smaller screens */
-        font-size: 14px; /* Adjusted font size for smaller screens */
+        padding: 8px 18px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 900px) {
     .navbar .logo {
-        width: 60px; /* Adjusted logo width for very small screens */
+        width: 60px;
     }
 
     .navbar-menu {
-        gap: 18px; /* Adjusted gap for very small screens */
-        font-size: 14px; /* Adjusted font size for very small screens */
+        gap: 18px;
+        font-size: 14px;
     }
 
     .navbar-right {
-        gap: 15px; /* Adjusted gap for very small screens */
+        gap: 15px;
     }
 
     .navbar-right img {
-        width: 18px; /* Adjusted image size for very small screens */
+        width: 18px;
     }
 
     .navbar-right button {
-        font-size: 12px; /* Adjusted font size for buttons */
-        padding: 6px 14px; /* Adjusted padding for buttons */
+        font-size: 12px;
+        padding: 6px 14px;
     }
 }
 
 @media (max-width: 750px) {
     .navbar-menu {
-        display: none; /* Hide the navbar menu on smaller screens */
+        display: none;
     }
 
     .navbar .logo {
-        width: 50px; /* Adjusted logo width for the most compact navbar */
+        width: 50px;
     }
 }
