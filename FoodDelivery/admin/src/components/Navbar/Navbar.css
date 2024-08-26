@@ -1,26 +1,26 @@
-/* Fresh and Elegant Navbar Styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 3%; /* Reduced padding for a smaller navbar */
-    background-color: white; /* Clean white background for a fresh appearance */
-    border-bottom: 1px solid #E0E0E0; /* Light grey border for a modern touch */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+    padding: 8px 3%; 
+    background-color: white; 
+    border-bottom: 1px solid #E0E0E0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
 }
 
 .navbar:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
 }
 
 .navbar .logo {
-    width: max(8%, 60px); /* Reduced logo size for a more compact look */
-    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+    width: max(8%, 60px); 
+    transition: transform 0.3s ease; 
 }
 
 .navbar .logo:hover {
-    transform: scale(1.05); /* Slightly enlarges the logo on hover for a modern touch */
+    transform: scale(1.05);
 }
 
 .navbar .profile {
